@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Калькулятор</title>
+</head>
+<body onkeydown="solve()">
+    <div class="calc-container">
+        <div class="clear-button" id="clear" onclick="clr()">del</div>
+        <input id="input" class="calc-window">
+        <div class="calc-buttons-container">
+            <div id="num7" class="calc-button" onclick="display('7')">7</div>
+            <div id="num8" class="calc-button" onclick="display('8')">8</div>
+            <div id="num9" class="calc-button" onclick="display('9')">9</div>
+            <div id="division-sign" class="calc-button operator" onclick="display('/')">/</div>
+            <div id="num4" class="calc-button" onclick="display('4')">4</div>
+            <div id="num5" class="calc-button" onclick="display('5')">5</div>
+            <div id="num6" class="calc-button" onclick="display('6')">6</div>
+            <div id="multiply-sign" class="calc-button operator" onclick="display('*')">*</div>
+            <div id="num1" class="calc-button" onclick="display('1')">1</div>
+            <div id="num2" class="calc-button" onclick="display('2')">2</div>
+            <div id="num3" class="calc-button" onclick="display('3')">3</div>
+            <div id="minus-sign" class="calc-button operator" onclick="display('-')">-</div>
+            <div id="num0" class="calc-button" onclick="display('0')">0</div>
+            <div id="dot-sign" class="calc-button operator" onclick="display('.')">.</div>
+            <div id="plus-sign" class="calc-button operator" onclick="display('+')">+</div>
+            <div id="result" class="calc-button" onclick="solve()" >=</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+    </html>
